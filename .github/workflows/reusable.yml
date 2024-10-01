@@ -1,0 +1,14 @@
+name: GitHub Actions demo
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+
+on:
+  workflow_call:
+  push:
+    branches:
+      - main
+
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This is a reusable workflow"
